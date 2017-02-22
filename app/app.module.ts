@@ -2,10 +2,10 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent }   from './app.component';
-import { PiesListComponent } from './pies-list.component';
-import { TaskListComponent } from './task-list.component';
-import { EditTaskComponent } from './edit-task.component';
-import { NewTaskComponent } from './new-task.component';
+import { NewKegComponent } from './new-keg.component';
+import { KegListComponent } from './keg-list.component';
+import { EmptyKegListComponent } from './empty-keg-list.component';
+import { EditKegComponent } from './edit-keg.component';
 
 @NgModule({
   imports: [
@@ -14,10 +14,10 @@ import { NewTaskComponent } from './new-task.component';
   ],
   declarations: [
     AppComponent,
-    PiesListComponent,
-    TaskListComponent,
-    EditTaskComponent,
-    NewTaskComponent,
+    NewKegComponent,
+    KegListComponent,
+    EmptyKegListComponent,
+    EditKegComponent
   ],
   bootstrap:    [ AppComponent ]
 })

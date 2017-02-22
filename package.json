@@ -47,5 +47,13 @@
   },
   "main": "gulpfile.js",
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjjaeger/angularjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gjjaeger/angularjs/issues"
+  },
+  "homepage": "https://github.com/gjjaeger/angularjs#readme",
   "description": ""
 }

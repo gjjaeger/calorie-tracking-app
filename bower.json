@@ -1,20 +1,17 @@
 {
   "name": "angular2-skeleton",
   "description": "",
-  "main": "",
+  "main": "gulpfile.js",
   "authors": [
     "gjjaeger"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/gjjaeger/angularjs",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^3.3.7"
-  }
+  ]
 }
