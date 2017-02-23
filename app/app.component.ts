@@ -10,6 +10,7 @@ import { Keg } from './keg.model';
       (newTaskSender)="addKeg($event)">
     </new-keg>
     <keg-list
+      class="col-xs-12"
       [KegListChild]="KegList"
       (clickSender)="showDetails($event)">
     </keg-list>
