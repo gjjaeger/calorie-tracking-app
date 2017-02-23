@@ -18,6 +18,7 @@ h1 {
   background-color: LightBlue;
 }
 
+<<<<<<< HEAD
 .highalc{
   border:1px solid blue;
 }
@@ -30,4 +31,9 @@ h1 {
 
 .veryhighalc{
   border:1px solid red;
+=======
+.filter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+>>>>>>> 828cd989310b5c967308972f8b73f451ea42e942
 }
