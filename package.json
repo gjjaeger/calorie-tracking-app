@@ -1,15 +1,8 @@
 {
-  "name": "angular2-skeleton",
+  "name": "angular_calorie_tracker",
   "version": "1.0.0",
-  "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "lite": "lite-server",
-    "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings"
-  },
-  "license": "ISC",
+  "description": "",
+  "main": "gulpfile.js",
   "dependencies": {
     "@angular/common": "2.0.0-rc.6",
     "@angular/compiler": "2.0.0-rc.6",
@@ -45,15 +38,9 @@
     "typescript": "^1.8.10",
     "typings": "^1.3.2"
   },
-  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gjjaeger/angularjs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gjjaeger/angularjs/issues"
-  },
-  "homepage": "https://github.com/gjjaeger/angularjs#readme",
-  "description": ""
+  "license": "ISC"
 }

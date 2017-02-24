@@ -1,48 +1,44 @@
 import { Component } from '@angular/core';
-import { Keg } from './keg.model';
+import { Meal } from './meal.model';
 
 @Component({
   selector: 'my-app',
   template: `
   <div class="container">
-    <h1>My bar Info</h1>
-    <new-keg
-      (newTaskSender)="addKeg($event)">
-    </new-keg>
-    <keg-list
+    <h1>What did you eat today</h1>
+    <meal-list
       class="col-xs-12"
-      [KegListChild]="KegList"
-      (clickSender)="showDetails($event)">
-    </keg-list>
-    <empty-keg-list
-      [KegListChild]="KegList">
-    </empty-keg-list>
-    <edit-keg
-      [childSelectedKeg]="clickedonKeg"
-      (doneClickedSender)="editFinished()">
-    </edit-keg>
+      [MealListChild]="MealList"
+      (ClickSender)="showDetails($event)">
+    </meal-list>
+    <new-meal
+      (newMealSender)="addMeal($event)">
+    </new-meal>
+    <edit-meal
+      [childSelectedMeal]="clickedonMeal"
+      (doneCLickedSender)="editFinished()">
+    </edit-meal>
+    <daily-meal-list
+      [MealListChild]="MealList">
+    </daily-meal-list>
   </div>
   `
 })
 
 export class AppComponent {
 
-  public KegList : Keg [] = [
-    new Keg("Churchill","Heineken",30,4.5,13)
-  ];
+  public MealList : Meal [] = [];
 
-  public emptyKegList : Keg[] = [];
-
-   addKeg(newKegFromChild : Keg) {
-    this.KegList.push(newKegFromChild);
+  addMeal (newMeal : Meal){
+    this.MealList.push(newMeal);
   }
 
-  clickedonKeg : Keg = null;
-  showDetails(clickedKeg : Keg){
-    this.clickedonKeg=clickedKeg;
+  clickedonMeal : Meal = null;
+  showDetails(clickedMeal : Meal){
+    this.clickedonMeal=clickedMeal;
   }
 
-  editFinished(){
-    this.clickedonKeg = null;
+  editFinishsed(){
+    this.clickedonMeal = null;
   }
 }

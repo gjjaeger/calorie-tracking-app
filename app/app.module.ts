@@ -2,11 +2,14 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent }   from './app.component';
-import { NewKegComponent } from './new-keg.component';
-import { KegListComponent } from './keg-list.component';
-import { EmptyKegListComponent } from './empty-keg-list.component';
-import { EditKegComponent } from './edit-keg.component';
-
+import { MealListComponent } from './meal-list.component';
+import { MealDetailsComponent } from './meal-details.component';
+import { NewMealComponent } from './new-meal.component';
+import { CaloriePipe } from './calorie.pipe';
+import { EditMealComponent } from './edit-meal.component';
+import { DailyMealListComponent } from './daily-meal-list.component';
+import { DayPipe } from './day.pipe';
+import { TotalCaloriesComponent } from './total-calories.component'
 
 @NgModule({
   imports: [
@@ -15,10 +18,14 @@ import { EditKegComponent } from './edit-keg.component';
   ],
   declarations: [
     AppComponent,
-    NewKegComponent,
-    KegListComponent,
-    EmptyKegListComponent,
-    EditKegComponent
+    MealListComponent,
+    MealDetailsComponent,
+    NewMealComponent,
+    CaloriePipe,
+    EditMealComponent,
+    DailyMealListComponent,
+    DayPipe,
+    TotalCaloriesComponent
   ],
   bootstrap:    [ AppComponent ]
 })
